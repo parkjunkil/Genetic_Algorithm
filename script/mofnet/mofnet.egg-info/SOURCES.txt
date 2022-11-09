@@ -1,0 +1,9 @@
+setup.py
+mofnet/__init__.py
+mofnet/mofnet.py
+mofnet.egg-info/PKG-INFO
+mofnet.egg-info/SOURCES.txt
+mofnet.egg-info/dependency_links.txt
+mofnet.egg-info/not-zip-safe
+mofnet.egg-info/requires.txt
+mofnet.egg-info/top_level.txt
