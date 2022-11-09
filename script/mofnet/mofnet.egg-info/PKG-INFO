@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: mofnet
+Version: 0.0.1
+Summary: Predict properties of MOFs from topology and building blocks.
+Home-page: UNKNOWN
+Author: Sangwon Lee
+Author-email: integratedmailsystem@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
