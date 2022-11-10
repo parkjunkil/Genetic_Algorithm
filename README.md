@@ -1,7 +1,7 @@
 # MOF_Screening_for_Hydrogen_Storage
 Data and processing scripts used for the following work
 
-"Computational Design of Metal-Organic Frameworks with Unprecedented High Hydrogen Working Capacity and High Synthesizability" [link_to_paper](https:/)  
+"Computational Design of Metal-Organic Frameworks with Unprecedented High Hydrogen Working Capacity and High Synthesizability" [link_to_be_uptdated](https:/)  
 
 <br/><br/>
 
