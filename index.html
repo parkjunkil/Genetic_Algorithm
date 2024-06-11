@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="MOFFUSION GITHUB Page">
+        content="Genetic Alogirhtm GITHUB Page">
   <meta name="keywords" content="MOFFUSION">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Multi-modal conditioning for metal-organic frameworks generation using 3D modeling techniques</title>
@@ -69,8 +69,8 @@
           <a class="navbar-item" href="https://parkjunkil.github.io/ZeoDiff/">
             ZEODIFF
           </a>
-          <a class="navbar-item" href="https://github.com/parkjunkil/MOF_Screening_for_Hydrogen_Storage">
-            Hydrogen
+          <a class="navbar-item" href="https://github.com/parkjunkil/Genetic_Algorithm">
+            Genetic Algorithm
           </a>
         </div>
       </div>
@@ -85,12 +85,14 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Multi-modal conditioning for metal-organic frameworks generation using 3D modeling techniques</h1>
+          <h1 class="title is-1 publication-title">Computational Design of Metal–Organic Frameworks with Unprecedented High Hydrogen Working Capacity and High Synthesizability</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://scholar.google.com/citations?user=rVGLAYIAAAAJ&hl=en&oi=ao">Junkil Park</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://qkqkfldis1.github.io/">Youhan Lee</a><sup>2</sup>,</span>
+              <a href="https://scholar.google.com/citations?hl=en&user=nZXhqxkAAAAJ">Yunsung Lim</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://sangwon91.github.io/">Sangbwon Lee</a><sup>2</sup>,</span>
             <span class="author-block">
               <a href="https://scholar.google.com/citations?user=OUoa6QgAAAAJ&hl=en&oi=ao">Jihan Kim</a><sup>1</sup>,
             </span>
@@ -98,28 +100,19 @@
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>Korea Advanced Institue of Science and Technology,</span>
-            <span class="author-block"><sup>2</sup>NVIDIA</span>
+            <span class="author-block"><sup>2</sup>LG Chem</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href=""
+                <a href="https://pubs.acs.org/doi/full/10.1021/acs.chemmater.2c01822"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
                   <span>Paper</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
                 </a>
               </span>
               <!-- Code Link. -->
@@ -148,14 +141,14 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-           The design of porous materials with user-desired properties has been a great interest for the last few decades. However, the flexibility 
-            of target properties has been highly limited, and targeting multiple properties of diverse modalities simultaneously has been scarcely explored. 
-            Furthermore, although deep generative models have opened a new paradigm in materials generation, their incorporation into porous materials such 
-            as metal-organic frameworks (MOFs) has not been satisfactory due to their structural complexity. In this work, we introduce MOFFUSION, a latent 
-            diffusion model that addresses the aforementioned challenges. Signed distance functions (SDFs) were employed for the input representation of MOFs, 
-            marking their first usage in representing porous materials for generative models. Using the suitability of SDFs in describing complicated pore structures,
-            MOFFUSION exhibited exceptional generation performance, and demonstrated its versatile capability of conditional generation with handling diverse modalities of data, 
-            including numeric, categorical, text data, and their combinations.
+            Compared to conventional computational screening studies that are limited by the size of database, inverse design has a great potential
+            to facilitate identifying new materials with optimal properties. In this work, we integrate machine learning with genetic algorithm to computationally
+            design metal–organic frameworks (MOFs) for hydrogen storage applications at cryogenic conditions. As such, we identified 6277 MOFs that exceed the 
+            current record (37.2 g/L of NPF-200) at operating conditions between 5 and 100 bar at 77 K. MOFs, whose working capacities exceed 40.0 g/L 
+            (system-based 2025 DOE target) were also identified, where the highest working capacity obtained from this work was 41.6 g/L, which is higher than any other
+            hypothetical MOFs reported thus far. Furthermore, synthesizability of the top performing structures was assessed by comparing relative stability with their polymorphic 
+            structures while taking into account the possibility of interpenetration. We demonstrate that our methodology can successfully design MOFs with both high hydrogen capacity
+            and synthesizability and we anticipate our workflow can be widely applied to various other materials and applications.
           </p>
         </div>
       </div>
@@ -168,92 +161,31 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="./docs/objects/architecture.jpg">
+      <img src="./docs/objects/GA.jpg">
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">MOFFUSION Architecture
+        <span class="dnerf">Genetic Algorithm Workflow
       </h2>
     </div>
   </div>
 </section>
 
+
+
 <section class="section">
-  <div class="container is-max-desktop">
-
+  <div class="container is-max-desktop">    
+    <!-- Conditoining. -->
     <div class="columns is-centered">
-
-      <!-- SDF -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Signed Distance Function</h2>
+      <div class="column is-full-width">
+        <h2 class="title is-3">Proposed Hypothetical MOF structures </h2>
+        <div class="content has-text-centered">
           <p>
-            Within <i>MOFFUSION</i>, signed distance functions (SDFs) were used as an input representation for MOFs, marking their first implementation in porous materials generation. 
+           The genetic algorithm successfully generated MOF structures with high hydrogen working capacities. We further applied synthesizability metric, which assesses the sythesizabiltiy of a given structure through energy comparison with polymorph structures. 
+           As a result, we proposed the following structures which exhibit exceptional hydrogen adsorption behavior with high synthesizability at the same time.
           </p>
-          <img src="./docs/objects/sdf.jpg">
-        </div>
+          <img align="center" width="75%" src="./docs/objects/structures.jpg">
+        </div>   
       </div>
-      <!--/ SDF. -->
-
-      <!-- MOF-SDF. -->
-      <div class="column">
-        <h2 class="title is-3">SDF for MOFs</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              SDFs successfully capture the geomtric features of MOFs, and accurately represent the intrinsic pore morphology of various MOFs.
-            </p>
-            <img src="./docs/objects/mof-sdf.gif">
-          </div>
-        </div>
-      </div>
+     </div>
     </div>
-  </div> 
-</section>  
-
-
-
-<section class="section">
-  <div class="container is-max-desktop">    
-    <!-- Conditoining. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Conditional Generation</h2>
-        <!-- H2. --> 
-        <h3 class="title is-4">1. Conditioning on Numeric Data</h3>
-        <div class="content has-text-centered">
-          <img align="center" width="75%" src="./docs/objects/h2_big.jpg">
-        </div>   
-
-        
-        <!-- Topology. -->
-        <h3 class="title is-4">2. Conditioning on Categorical Data</h3>
-        <div class="content has-text-centered">
-          <img align="center" width="75%" src="./docs/objects/topo.gif">
-        </div>    
-
-        <!-- Text. -->
-        <h3 class="title is-4">3. Conditioning on Text Data</h3>
-        <div class="content has-text-centered">
-          <img align="center" width="75%" src="./docs/objects/text.jpg">
-        </div>   
-        
-      </div>
-     </div>
-</section>
-
-
-<section class="section">
-  <div class="container is-max-desktop">    
-    <!-- Conditoining. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Pore Crafting</h2>
-          <p>
-           MOFFUSION's intrinsic capability of finely tailoring the pore morphology of generated samples.
-          </p>
-          <div class="content has-text-centered">
-            <img align="center" width="75%" src="./docs/objects/pore_crafting.jpg">
-          </div> 
-      </div>
-     </div>
-</section>
-
+</section>        
+ 
